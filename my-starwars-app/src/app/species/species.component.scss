@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.spec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  &-name {
+    font-size: 17px;
+    font-weight: normal;
+  }
+}

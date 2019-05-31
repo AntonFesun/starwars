@@ -1,0 +1,15 @@
+<h1>Starships</h1>
+<input type="search" [(ngModel)]="searchString" placeholder="Search">
+<div class="wrapper">
+  <div class="starship" *ngFor="let starship of starShips | search: searchString ">
+    <h2 class="starship-name">Name: {{starship.name}}</h2>
+    <p class="starship-model">Model: {{starship.model}}</p>
+    <p class="starship-manufacturer">Manufacturer: {{starship.manufacturer}}</p>
+    <p class="starship-cost_in_credits">Cost in credits: {{starship.cost_in_credits}}</p>
+    <p class="starship-length">Length: {{starship.length}}</p>
+    <p class="starship-max_atmosphering_speed">Max atmosphering speed: {{starship.max_atmosphering_speed}}</p>
+    <p class="starship-crew">Crew: {{starship.crew}}</p>
+    <p class="starship-passengers">Passengers: {{starship.passengers}}</p>
+    <p class="starship-cargo_capacity">Cargo capacity: {{starship.cargo_capacity}}</p>
+  </div>
+</div>

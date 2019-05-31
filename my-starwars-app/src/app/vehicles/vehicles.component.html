@@ -1,0 +1,15 @@
+<h1>Vehicles</h1>
+<input type="search" [(ngModel)]="searchString" placeholder="Search">
+<div class="wrapper">
+  <div class="vehicle" *ngFor="let vehicle of vehicles | search : searchString">
+    <h2 class="vehicle-name">Name: {{vehicle.name}}</h2>
+    <div class="vehicle-model">Model: {{vehicle.model}}</div>
+    <div class="vehicle-manufacturer">Manufacturer: {{vehicle.manufacturer}}</div>
+    <div class="vehicle-cost_in_credits">Cost_in_credits: {{vehicle.cost_in_credits}}</div>
+    <div class="vehicle-length">Length: {{vehicle.length}}</div>
+    <div class="vehicle-max_atmosphering_speed">Speed: {{vehicle.max_atmosphering_speed}}</div>
+    <div class="vehicle-crew">Crew: {{vehicle.crew}}</div>
+    <div class="vehicle-passengers">Passengers: {{vehicle.passengers}}</div>
+    <div class="vehicle-cargo_capacity">cargo_capacity: {{vehicle.cargo_capacity}}</div>
+  </div>
+</div>

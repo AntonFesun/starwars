@@ -1,0 +1,12 @@
+<h1>Planets</h1>
+<input type="search" [(ngModel)]="searchString" placeholder="Search">
+<div class="wrapper">
+  <div class="planet" *ngFor="let planet of planets | search: searchString">
+    <h2 class="planet-name">Name: {{planet.name}}</h2>
+    <p class="planet-orbital_period">Period: {{planet.orbital_period}}</p>
+    <p class="planet-diameter">Diameter: {{planet.diameter}}</p>
+    <p class="planet-climate">Climate: {{planet.climate}}</p>
+    <p class="planet-terrain">Terrain: {{planet.terrain}}</p>
+    <p class="planet-population">Population: {{planet.population}}</p>
+  </div>
+</div>

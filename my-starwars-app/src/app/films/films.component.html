@@ -1,0 +1,11 @@
+<h1>Films</h1>
+<input type="search" [(ngModel)]="searchString" placeholder="Search">
+<div class="wrapper">
+  <div class="film" *ngFor="let film of films | search: searchString">
+    <h2 class="film-title">{{film.title}}</h2>
+    <p class="film-episode">ID: {{film.episode_id}}</p>
+    <p class="film-director">Director: {{film.director}}</p>
+    <p class="film-producer">Producer: {{film.producer}}</p>
+    <p class="film-release">Date of release:{{film.release_date}}</p>
+  </div>
+</div>

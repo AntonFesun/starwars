@@ -1,0 +1,15 @@
+<h1>Species</h1>
+<input type="search" [(ngModel)]="searchString" placeholder="Search">
+<div class="wrapper">
+  <div class="spec" *ngFor="let spec of species | search: searchString">
+    <h2 class="spec-name">Name: {{spec.name}}</h2>
+    <p class="spec-classification">Classification: {{spec.classification}}</p>
+    <p class="spec-designation">Designation: {{spec.designation}}</p>
+    <p class="spec-average_height">Average height: {{spec.average_height}}</p>
+    <p class="spec-skin_colors">Skin: {{spec.skin_colors}}</p>
+    <p class="spec-hair_colors">Hair: {{spec.hair_colors}}</p>
+    <p class="spec-eye_colors">Eyes: {{spec.eye_colors}}</p>
+    <p class="spec-homeworld">Eyes: {{spec.homeworld}}</p>
+    <p class="spec-language">Eyes: {{spec.language}}</p>
+  </div>
+</div>

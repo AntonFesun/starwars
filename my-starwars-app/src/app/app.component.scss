@@ -1,0 +1,24 @@
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+  &-item {
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<h1>People</h1>
+<input type="search" [(ngModel)]="str" placeholder="Search">
+<div class="wrapper">
+  <div class="actor" *ngFor="let actor of people | search: str">
+    <h2 class="actor-name">Name: {{actor.name}}</h2>
+    <p class="actor-height">Height: {{actor.height}}</p>
+    <p class="actor-mass">Mass: {{actor.mass}}</p>
+    <p class="actor-hair_color">Hair: {{actor.hair_color}}</p>
+    <p class="actor-skin_color">Skin: {{actor.skin_color}}</p>
+    <p class="actor-eye_color">Eyes: {{actor.eye_color}}</p>
+    <p class="actor-birth_year">Birthday: {{actor.birth_year}}</p>
+    <p class="actor-gender">Gender: {{actor.gender}}</p>
+  </div>
+</div>
